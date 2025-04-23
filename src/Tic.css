@@ -1,4 +1,4 @@
-/* Body styling */
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -10,15 +10,13 @@ body {
     color: white;
   }
   
-  /* Game container styling */
   .game-container {
     position: relative;
   }
   
-  /* Board styling */
   .board {
     display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Responsive columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 10px;
   padding: 5vw;
   max-width: 95vw;
@@ -27,7 +25,7 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
   
-  /* Cell styling */
+  
   .cell {
     display: flex;
     justify-content: center;
@@ -41,7 +39,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s, background 0.3s;
-    aspect-ratio: 1 / 1; /* Keeps it square */
+    aspect-ratio: 1 / 1; 
   width: 100%;
   
   }
@@ -51,7 +49,7 @@ body {
     transform: scale(1.1);
   }
   
-  /* Modal styling */
+  
   .modal {
     position: absolute;
     top: 50%;
