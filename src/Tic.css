@@ -18,13 +18,13 @@ body {
   /* Board styling */
   .board {
     display: grid;
-    grid-template-columns: repeat(3, 120px);
-    grid-template-rows: repeat(3, 120px);
-    gap: 10px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  grid-template-columns: repeat(3, 1fr); /* Responsive columns */
+  gap: 10px;
+  padding: 5vw;
+  max-width: 95vw;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
   
   /* Cell styling */
@@ -41,6 +41,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s, background 0.3s;
+    aspect-ratio: 1 / 1; /* Keeps it square */
+  width: 100%;
+  
   }
   
   .cell:hover {
