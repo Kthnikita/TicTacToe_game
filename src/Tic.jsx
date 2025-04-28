@@ -94,14 +94,15 @@ function Tic() {
     )}
   
     <div className="board">
-    <div className="cells-wrapper">
+    <div className="cells">
     {arr.map((_, index) => (
       <div key={index} className="cell" onClick={() => fn(index)}>
         {arr[index]}
       </div>
     ))}
+     {winline && <div style={getline(winline)} />}
   </div>
-      {winline && <div style={getline(winline)} />}
+     
     </div>
     
   </div>

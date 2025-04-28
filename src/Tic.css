@@ -18,19 +18,20 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
-    /* padding: 5vw; */
+    padding: 5vw;
     width: 380px;
     height: 380px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
+ 
   }
-  .cells-wrapper {
+  .cells {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 100%;
+    position: relative;
   }
   
   
